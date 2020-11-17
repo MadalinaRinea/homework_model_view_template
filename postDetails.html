@@ -6,6 +6,8 @@
     <title>Post Details</title>
 
     <script src="scripts/posts.model.js"></script>
+    <script src="scripts/comments.model.js"></script>
+    <script src="scripts/users.model.js"></script>
     <script src="scripts/postDetails.js" defer></script>
 </head>
 <body>
@@ -16,7 +18,7 @@
     <form data-comment-form>
         <p>
             <label for="comment">Comment</label>
-            <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+            <textarea name="comment" data-comment id="comment" cols="30" rows="10"></textarea>
         </p>
         <p><button type="submit">Add a Comment</button></p>
     </form>
