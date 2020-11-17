@@ -42,7 +42,7 @@ class PostDetailsView {
 
     hidrateComments(post) {
         // http://jsonplaceholder.typicode.com/posts/2/comments
-        this.commentsModel.getCommentForPosts(2).then(comments => {
+        this.commentsModel.getCommentForPosts(post.id).then(comments => {
             const fragment = document.createDocumentFragment();
 
             for (const comment of comments) {
